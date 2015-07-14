@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:state_pressed="true" android:drawable="@drawable/bg_circle_selected" />
+    <item app:state_current_month="false">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/calendar_bg" />
+        </shape>
+    </item>
+    <item android:state_selected="true" android:drawable="@drawable/bg_circle_selected" app:state_highlighted="false" />
+    <item android:state_selected="false" android:drawable="@drawable/dot" app:state_highlighted="true" />
+    <item android:state_selected="true" android:drawable="@drawable/circle_dot" app:state_highlighted="true" />
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="@color/calendar_bg" />
+        </shape>
+    </item>
+</selector>

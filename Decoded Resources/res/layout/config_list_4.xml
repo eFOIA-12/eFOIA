@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:padding="@dimen/padding_configurability_list" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.parallel6.ui.configurability.widgets.CRSlotTextView android:textSize="20.0sp" android:ellipsize="end" android:id="@id/slot1" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <com.parallel6.ui.configurability.widgets.CRSlotTextView android:textSize="16.0sp" android:ellipsize="end" android:id="@id/slot2" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.parallel6.ui.configurability.widgets.CRSlotTextView android:textSize="14.0sp" android:ellipsize="end" android:id="@id/slot4" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+        <com.parallel6.ui.configurability.widgets.CRSlotTextView android:textSize="14.0sp" android:ellipsize="end" android:id="@id/slot3" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>

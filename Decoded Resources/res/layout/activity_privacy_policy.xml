@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/efoia_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="0.1">
+        <TextView android:textAppearance="?android:textAppearanceMedium" android:textColor="@color/white" android:id="@id/textView3" android:paddingTop="15.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/privacy_policy_text_title" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" />
+        <ImageButton android:id="@id/back" android:background="@drawable/back_button" android:layout_width="35.0sp" android:layout_height="35.0sp" android:layout_marginLeft="5.0sp" android:layout_marginTop="5.0sp" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:onClick="goBack" android:contentDescription="Back" android:layout_alignParentStart="true" />
+    </RelativeLayout>
+    <TextView android:id="@id/privacy_policy_textview" android:background="@color/white" android:scrollbars="vertical" android:clickable="true" android:layout_width="fill_parent" android:layout_height="0.0dip" android:maxLines="30" android:layout_weight="0.8" />
+    <LinearLayout android:layout_gravity="bottom" android:orientation="horizontal" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="0.1">
+        <ImageButton android:id="@id/reject_button" android:background="@drawable/reject_policy_button" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="0.5" android:onClick="cancelPressed" android:contentDescription="Reject Privacy Policy &amp; return to home view" />
+        <ImageButton android:id="@id/accept_button" android:background="@drawable/accept_policy_button" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="0.5" android:onClick="okPressed" android:contentDescription="Accept Privacy Policy &amp; proceed to next step" />
+    </LinearLayout>
+</LinearLayout>

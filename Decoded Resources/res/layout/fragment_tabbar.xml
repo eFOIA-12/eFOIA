@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:background="@color/base_theme_color" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="@dimen/height_fragment_tabbar" style="@style/CR_Theme_Tabbar"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_width="0.0dip" android:layout_height="wrap_content" android:src="@drawable/img_app_logo" android:scaleType="centerInside" android:layout_weight="1.0" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/fragment_tabbar_lyt_buttons" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+</LinearLayout>

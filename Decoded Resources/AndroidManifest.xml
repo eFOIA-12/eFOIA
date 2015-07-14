@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="gov.dhs.mobile.efoia" platformBuildVersionCode="21" platformBuildVersionName="5.0.1-1624448">
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"/>
+    <application android:allowBackup="true" android:icon="@mipmap/ic_launcher" android:label="@string/app_name" android:theme="@style/AppTheme">
+        <activity android:name="gov.dhs.mobile.efoia.MainActivity"/>
+        <activity android:name="gov.dhs.mobile.efoia.HeroActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="gov.dhs.mobile.efoia.viewcontrollers.howto.FOIAHowToActivity" android:screenOrientation="portrait"/>
+        <activity android:name="gov.dhs.mobile.efoia.viewcontrollers.privacypolicy.PrivacyPolicyActivity" android:screenOrientation="portrait"/>
+        <activity android:name="gov.dhs.mobile.efoia.viewcontrollers.library.FOIALibrary" android:screenOrientation="portrait"/>
+        <activity android:name="gov.dhs.mobile.efoia.viewcontrollers.statutes.FOIAStatutes" android:screenOrientation="portrait"/>
+        <activity android:label="@string/title_activity_webview" android:name="gov.dhs.mobile.efoia.webview.FOIAWebView"/>
+        <meta-data android:name="io.fabric.ApiKey" android:value="c5e384c44785b9a4290c898f84fc9b7c1b60798f"/>
+        <activity android:label="@string/title_activity_events" android:name="gov.dhs.mobile.efoia.viewcontrollers.events.EventsActivity"/>
+        <activity android:name="gov.dhs.mobile.efoia.viewcontrollers.eventdetails.EventDetailsActivity" android:screenOrientation="portrait"/>
+        <activity android:name="gov.dhs.mobile.efoia.viewcontrollers.fivesteps.FiveStepsActivity" android:screenOrientation="portrait"/>
+        <activity android:name="gov.dhs.mobile.efoia.viewcontrollers.privacyact.PrivacyActActivity" android:screenOrientation="portrait"/>
+        <activity android:name="gov.dhs.mobile.efoia.viewcontrollers.privacystatement.PrivacyActStatement" android:screenOrientation="portrait"/>
+        <activity android:name="gov.dhs.mobile.efoia.viewcontrollers.feestructure.FeeStructureActivity" android:screenOrientation="portrait"/>
+        <activity android:name="gov.dhs.mobile.efoia.viewcontrollers.processing.ProcessingActivity" android:screenOrientation="portrait"/>
+        <activity android:name="gov.dhs.mobile.efoia.viewcontrollers.limits.LimitsActivity" android:screenOrientation="portrait"/>
+        <activity android:name="gov.dhs.mobile.efoia.viewcontrollers.exemptions.ExemptionsActivity" android:screenOrientation="portrait"/>
+        <activity android:name="gov.dhs.mobile.efoia.viewcontrollers.status.FOIAStatus" android:screenOrientation="portrait"/>
+        <activity android:name="gov.dhs.mobile.efoia.viewcontrollers.submission.step1.SubmissionStep1Activity" android:screenOrientation="portrait"/>
+        <activity android:name="gov.dhs.mobile.efoia.viewcontrollers.submission.step2.SubmissionStep2Activity" android:screenOrientation="portrait"/>
+        <activity android:name="gov.dhs.mobile.efoia.viewcontrollers.submission.step3.SubmissionStep3Activity" android:screenOrientation="portrait"/>
+        <activity android:name="gov.dhs.mobile.efoia.viewcontrollers.submission.step4.SubmissionStep4Activity" android:screenOrientation="portrait"/>
+        <activity android:name="gov.dhs.mobile.efoia.viewcontrollers.submission.step5.SubmissionStep5Activity" android:screenOrientation="portrait"/>
+        <activity android:name="gov.dhs.mobile.efoia.viewcontrollers.submission.step6.SubmissionStep6Activity" android:screenOrientation="portrait"/>
+        <activity android:label="@string/title_activity_submission_step7" android:name="gov.dhs.mobile.efoia.viewcontrollers.submission.step7.SubmissionStep7Activity"/>
+        <activity android:label="@string/title_activity_submission_step8" android:name="gov.dhs.mobile.efoia.viewcontrollers.submission.step8.SubmissionStep8Activity"/>
+        <meta-data android:name="com.google.android.maps.v2.API_KEY" android:value="@string/maps_api_key"/>
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.parallel6.ui.activities.CRMainActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.parallel6.ui.activities.CRSplashActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.parallel6.ui.activities.CRNotificationHandlerActivity"/>
+        <receiver android:name="com.parallel6.captivereachconnectsdk.gcm.GcmBroadcastReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
+                <category android:name="com.parallel6.captivereachconnectsdk"/>
+            </intent-filter>
+        </receiver>
+        <service android:name="com.parallel6.captivereachconnectsdk.gcm.GcmIntentService"/>
+        <service android:enabled="true" android:exported="true" android:name="com.parallel6.captivereachconnectsdk.cache.CacheService"/>
+    </application>
+</manifest>

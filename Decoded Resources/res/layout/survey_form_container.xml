@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent" style="@style/CR_Theme_SurveyDetail"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ProgressBar android:layout_gravity="center" android:id="@id/survey_form_container_pb_survey" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</FrameLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/fragment_my_calendar_footer" android:layout_width="fill_parent" android:layout_height="60.0dip" android:layout_alignParentBottom="true">
+        <TextView android:textColor="@android:color/white" android:gravity="center" android:id="@id/fragment_my_calendar_btn_calendar" android:background="@color/dark_blue" android:paddingLeft="25.0dip" android:paddingRight="25.0dip" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginRight="1.0dip" android:text="@string/calendar_view" android:layout_weight="1.0" style="@style/CalendarTitle" />
+        <TextView android:textColor="@android:color/white" android:gravity="center" android:id="@id/fragment_my_calendar_btn_list" android:background="@color/dark_blue" android:paddingLeft="25.0dip" android:paddingRight="25.0dip" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginLeft="1.0dip" android:text="@string/list_view" android:layout_weight="1.0" style="@style/CalendarTitle" />
+    </LinearLayout>
+    <FrameLayout android:orientation="vertical" android:id="@id/fragment_my_calendar_content" android:background="@color/calendar_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/fragment_my_calendar_footer" />
+</RelativeLayout>

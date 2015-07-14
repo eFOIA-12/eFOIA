@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.parallel6.ui.widgets.InfiniteViewPager android:id="@id/fragment_home_grid_viewPager_advertisements" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <View android:id="@id/home_bottom_line" android:background="#25000000" android:layout_width="fill_parent" android:layout_height="15.0dip" android:layout_alignParentBottom="true" />
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="#a8000000" android:layout_width="fill_parent" android:layout_height="218.0dip" android:layout_above="@id/home_bottom_line">
+        <ImageView android:id="@id/fragment_home_sliding_menu_iv_feature" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="40.0dip" android:src="@drawable/img_app_logo" />
+        <TextView android:textSize="16.0sp" android:textColor="@android:color/white" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/fragment_home_feature_text" />
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/fragment_home_social_site_lyt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" />
+    </LinearLayout>
+</RelativeLayout>

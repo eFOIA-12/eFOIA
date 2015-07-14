@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/fragment_home_grid_lyt_content" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.parallel6.ui.widgets.InfiniteViewPager android:id="@id/fragment_home_grid_viewPager_advertisements" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <View android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="0.55" />
+            <com.parallel6.ui.widgets.InfiniteViewPager android:id="@id/fragment_home_grid_viewPager_categories" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="0.45" />
+        </LinearLayout>
+    </RelativeLayout>
+    <ProgressBar android:id="@id/fragment_home_grid_pb_loading" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:indeterminate="true" android:layout_centerInParent="true" />
+</RelativeLayout>

@@ -1,7 +1,12 @@
 # eFOIA
 Reversed DHA eFOIA app
 
-Downloaded via www.Apkleecher.com.
+Downloaded via www.Apkleecher.com.  Didn't verify if it was unaltered.
+
+md5, sha1, sha256 sums of downloaded APK:
+ab71bb0b0b37f1385210ae1ff61aba60 *eFOIA 1.2_[www.Apkleecher.com].apk
+0ea8fce699091fe1400623604bbeb7e040c506bb *eFOIA 1.2_[www.Apkleecher.com].apk
+64c4623cd36135e3fb58a1bdf6a9e7ca994130f48a7089f57dd4675dcf8a9651 *eFOIA 1.2_[www.Apkleecher.com].apk
 
 Quickly reversed with bytecode viewer using fernflower to decompile.
 
